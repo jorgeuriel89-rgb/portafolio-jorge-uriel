@@ -10,6 +10,7 @@
 | Contacto | `mailto:` directo (sin backend ni Formspree). |
 | Proyectos | El usuario tiene URLs para enlazar (demo o repo). |
 | Acento de color | `#FF4D00` (naranja vibrante) sobre fondo `#FAFAF8` y texto `#0F172A` — estilo "Editorial Tech". |
+| Dominio | `portafolio-jorge-uriel.vercel.app` (asignado por Vercel al importar el repo `jorgeuriel89-rgb/portafolio-jorge-uriel`). |
 | Framework | **Next.js 15** (el scaffold instaló Next 16; se hizo downgrade a `next@15.5.x` para cumplir AGENTS.md). Tailwind v4 vía `@tailwindcss/postcss`. |
 
 ## Supuestos sobre contenido
