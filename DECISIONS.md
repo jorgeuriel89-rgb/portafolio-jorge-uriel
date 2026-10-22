@@ -12,15 +12,15 @@
 | Acento de color | `#FF4D00` (naranja vibrante) sobre fondo `#FAFAF8` y texto `#0F172A` — estilo "Editorial Tech". |
 | Framework | **Next.js 15** (el scaffold instaló Next 16; se hizo downgrade a `next@15.5.x` para cumplir AGENTS.md). Tailwind v4 vía `@tailwindcss/postcss`. |
 
-## Supuestos sobre contenido [PENDIENTE — verificar con Jorge]
+## Supuestos sobre contenido
 
-1. **Correo de contacto:** placeholder `TU_CORREO@ejemplo.com` en `data/portfolio.ts` (`socials.email`).
-2. **URLs de proyectos:** campos `url` vacíos — los botones "Ver proyecto" solo se renderizan si hay URL.
-3. **Redes sociales:** placeholders `https://github.com/TU-USUARIO` y `https://linkedin.com/in/TU-USUARIO`.
-4. **Fechas de experiencia/educación:** períodos estimados (Interesse 2024–Presente, SICE 2022–2024, ULA 2021–2023, ITSSAT 2018–2022). Confirmar fechas reales.
-5. **Nombres exactos de certificaciones:** se usaron nombres plausibles (AWS Cloud Practitioner, Google Cloud Fundamentals, Anthropic AI Fluency). Confirmar nombres oficiales.
-6. **Stack del Sistema AIFA:** asumido `TypeScript / Node.js / SQL Server`. Confirmar tecnologías reales.
-7. **Ubicación:** se usa "México" genérico en el hero.
+1. ~~Correo de contacto~~ ✅ `jorgeuriel89@gmail.com`
+2. ~~Redes sociales~~ ✅ GitHub `jorgeuriel89-rgb`, LinkedIn `jorge-uriel-gorgonio`
+3. **URLs de proyectos [PENDIENTE]:** campos `url` vacíos — los botones "Ver proyecto" solo se renderizan si hay URL.
+4. **Fechas de experiencia/educación [PENDIENTE]:** períodos estimados (Interesse 2024–Presente, SICE 2022–2024, ULA 2021–2023, ITSSAT 2018–2022). Confirmar fechas reales.
+5. **Nombres exactos de certificaciones [PENDIENTE]:** se usaron nombres plausibles (AWS Cloud Practitioner, Google Cloud Fundamentals, Anthropic AI Fluency). Confirmar nombres oficiales.
+6. **Stack del Sistema AIFA [PENDIENTE]:** asumido `TypeScript / Node.js / SQL Server`. Confirmar tecnologías reales.
+7. **Ubicación [PENDIENTE]:** se usa "México" genérico en el hero.
 
 ## Notas técnicas
 
