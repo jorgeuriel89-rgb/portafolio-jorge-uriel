@@ -96,11 +96,10 @@ export interface SiteContent {
 
 export const siteName = "Jorge Uriel Gorgonio Cobaxin";
 
-// TODO: reemplazar correo y URLs por los valores reales (ver DECISIONS.md)
 const socials = {
-  github: "https://github.com/TU-USUARIO",
-  linkedin: "https://linkedin.com/in/TU-USUARIO",
-  email: "TU_CORREO@ejemplo.com",
+  github: "https://github.com/jorgeuriel89-rgb",
+  linkedin: "https://www.linkedin.com/in/jorge-uriel-gorgonio",
+  email: "jorgeuriel89@gmail.com",
 };
 
 export const content: Record<Lang, SiteContent> = {
