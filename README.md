@@ -2,6 +2,8 @@
 
 Portafolio personal bilingüe (ES/EN) estilo "Editorial Tech" para búsqueda de oportunidades como Full Stack Developer.
 
+**En producción:** https://portafolio-jorge-uriel.vercel.app
+
 ## Stack
 
 - **Next.js 15** (App Router) + TypeScript — exportación estática (`output: 'export'`)
