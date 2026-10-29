@@ -179,7 +179,7 @@ export const content: Record<Lang, SiteContent> = {
           subtitle: "Infraestructura de peaje",
           description:
             "Sistema de información y replicación para las casetas de peaje del Circuito Exterior Mexiquense con dirección al AIFA, desarrollado con SICE México.",
-          stack: ["TypeScript", "Node.js", "SQL Server"],
+          stack: ["PostgreSQL", "Linux", "Bash", "Python"],
           url: "https://www.sice.com/blog/2021/11/17/suministro-instalacion-y-puesta-en-servicio-del-nivel-1-del-sistema-de-peaje-para-la-fase-2-y-3-del-circuito-exterior-mexiquense-estado-de-mexico/",
         },
       ],
@@ -311,7 +311,7 @@ export const content: Record<Lang, SiteContent> = {
           subtitle: "Toll infrastructure",
           description:
             "Information and replication system for toll booths on the Circuito Exterior Mexiquense highway toward AIFA airport, built with SICE México.",
-          stack: ["TypeScript", "Node.js", "SQL Server"],
+          stack: ["PostgreSQL", "Linux", "Bash", "Python"],
           url: "https://www.sice.com/blog/2021/11/17/suministro-instalacion-y-puesta-en-servicio-del-nivel-1-del-sistema-de-peaje-para-la-fase-2-y-3-del-circuito-exterior-mexiquense-estado-de-mexico/",
         },
       ],
