@@ -175,10 +175,10 @@ export const content: Record<Lang, SiteContent> = {
           stack: ["React", "FastAPI", "PostgreSQL", "Docker"],
         },
         {
-          title: "Sistema AIFA",
-          subtitle: "Infraestructura aeroportuaria",
+          title: "Sistema de Casetas AIFA",
+          subtitle: "Infraestructura de peaje",
           description:
-            "Sistema de información para operaciones del Aeropuerto Internacional Felipe Ángeles, desarrollado con SICE México.",
+            "Sistema de información y replicación para las casetas de peaje del Circuito Exterior Mexiquense con dirección al AIFA, desarrollado con SICE México.",
           stack: ["TypeScript", "Node.js", "SQL Server"],
           url: "https://www.sice.com/blog/2021/11/17/suministro-instalacion-y-puesta-en-servicio-del-nivel-1-del-sistema-de-peaje-para-la-fase-2-y-3-del-circuito-exterior-mexiquense-estado-de-mexico/",
         },
@@ -307,10 +307,10 @@ export const content: Record<Lang, SiteContent> = {
           stack: ["React", "FastAPI", "PostgreSQL", "Docker"],
         },
         {
-          title: "AIFA System",
-          subtitle: "Airport infrastructure",
+          title: "AIFA Toll Booth System",
+          subtitle: "Toll infrastructure",
           description:
-            "Information system for operations at Felipe Ángeles International Airport, built with SICE México.",
+            "Information and replication system for toll booths on the Circuito Exterior Mexiquense highway toward AIFA airport, built with SICE México.",
           stack: ["TypeScript", "Node.js", "SQL Server"],
           url: "https://www.sice.com/blog/2021/11/17/suministro-instalacion-y-puesta-en-servicio-del-nivel-1-del-sistema-de-peaje-para-la-fase-2-y-3-del-circuito-exterior-mexiquense-estado-de-mexico/",
         },

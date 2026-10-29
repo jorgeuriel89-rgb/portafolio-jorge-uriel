@@ -20,7 +20,7 @@
 3. **URLs de proyectos [PENDIENTE]:** campos `url` vacíos — los botones "Ver proyecto" solo se renderizan si hay URL.
 4. **Fechas de experiencia/educación [PENDIENTE]:** períodos estimados (Interesse 2024–Presente, SICE 2022–2024, ULA 2021–2023, ITSSAT 2018–2022). Confirmar fechas reales.
 5. **Nombres exactos de certificaciones [PENDIENTE]:** se usaron nombres plausibles (AWS Cloud Practitioner, Google Cloud Fundamentals, Anthropic AI Fluency). Confirmar nombres oficiales.
-6. **Stack del Sistema AIFA [PENDIENTE]:** asumido `TypeScript / Node.js / SQL Server`. Confirmar tecnologías reales.
+6. **Sistema de Casetas AIFA:** ✅ el proyecto es el sistema de información y replicación de las casetas del CEM hacia el AIFA (artículo de SICE enlazado). Stack asumido `TypeScript / Node.js / SQL Server` — confirmar tecnologías reales.
 7. **Ubicación [PENDIENTE]:** se usa "México" genérico en el hero.
 
 ## Notas técnicas
