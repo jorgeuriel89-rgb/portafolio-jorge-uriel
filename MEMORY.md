@@ -12,6 +12,9 @@ Sitio completo implementado: Header sticky, Hero animado, Experiencia, Proyectos
 - **Marquee CSS:** clase `.animate-marquee` en `globals.css` (`@keyframes marquee`, `translateX(-50%)`, 36s linear infinite) con la lista duplicada (`[...items, ...items]`) y `aria-hidden`. El contenedor necesita `overflow-hidden` o causa scroll horizontal.
 - **Animaciones:** `components/Reveal.tsx` envuelve secciones con `whileInView` (`once: true, margin: "-80px"`). En Hero se usa patrón `variants` container/item con `staggerChildren: 0.09`. En framer-motion v14, `ease` se tipa como `as const`.
 - **lucide-react v1.x:** ya NO exporta iconos de marca (`Github`, `Linkedin`). Se usan links de texto + `ArrowUpRight` (más editorial).
+- **Open Graph en nested routes:** el `openGraph`/`twitter` de `generateMetadata` hijo **reemplaza** al del padre (no hay merge profundo). Hay que declarar `images`, `siteName`, `type` completos en `app/[lang]/layout.tsx` o se pierden.
+- **og-image:** `public/og-image.png` (1200×627) se generó capturando `/tmp/og-card.html` con Chrome headless (`--screenshot --window-size=1200,627 --hide-scrollbars`). Para regenerarla, editar el HTML y re-capturar.
+- **metadataBase:** obligatorio para que `og:image` salga con URL absoluta (requerido por LinkedIn/Twitter).
 
 ## Tokens de diseño (globals.css / @theme)
 
