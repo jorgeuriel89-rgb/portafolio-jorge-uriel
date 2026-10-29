@@ -36,6 +36,19 @@ function Card({
         <p className="mt-3 max-w-lg leading-relaxed text-ink-soft">
           {project.description}
         </p>
+        {project.highlights && (
+          <ul className="mt-4 space-y-1.5">
+            {project.highlights.map((highlight) => (
+              <li
+                key={highlight}
+                className="flex items-start gap-2.5 text-sm text-ink-soft"
+              >
+                <span className="mt-1 text-[10px] text-accent">◆</span>
+                {highlight}
+              </li>
+            ))}
+          </ul>
+        )}
         <ul className="mt-6 flex flex-wrap gap-2">
           {project.stack.map((tech) => (
             <li

@@ -20,6 +20,7 @@ export interface Project {
   subtitle: string;
   description: string;
   stack: string[];
+  highlights?: string[];
   url?: string;
 }
 
@@ -169,11 +170,17 @@ export const content: Record<Lang, SiteContent> = {
           url: "https://controltripstms.com/",
         },
         {
-          title: "Plataforma White-Label",
-          subtitle: "SaaS multi-tenant",
+          title: "Ecosistema de Medios Multimarca",
+          subtitle: "Expansión y arquitectura modular de un medio digital",
           description:
-            "Plataforma personalizable para clientes empresariales con temas propios, dominios dedicados y configuración por tenant.",
-          stack: ["React", "FastAPI", "PostgreSQL", "Docker"],
+            "Desarrollo de la arquitectura central (Core) para el medio principal nmmexico.com y sus extensiones estratégicas: nmlive.com (enfoque social), theagallery.com (división de arte) y globaljetest.com (división corporativa). El sistema comparte la misma base de datos y backend (FastAPI + MySQL), mientras cada extensión mantiene su propio branding, tema visual y configuración regional.",
+          stack: ["React 19", "Vite", "FastAPI", "MySQL", "Docker", "Nginx"],
+          highlights: [
+            "Arquitectura Hub & Spoke (núcleo y extensiones)",
+            "Gestión de contenido segmentada por región y tipo de publicación",
+            "Integración de OAuth, Stripe (pagos) y R2 (imágenes) compartidos",
+          ],
+          url: "https://nmmexico.com",
         },
         {
           title: "Sistema de Casetas AIFA",
@@ -302,11 +309,17 @@ export const content: Record<Lang, SiteContent> = {
           url: "https://controltripstms.com/",
         },
         {
-          title: "White-Label Platform",
-          subtitle: "Multi-tenant SaaS",
+          title: "Multi-Brand Media Ecosystem",
+          subtitle: "Modular architecture for a digital media outlet",
           description:
-            "Customizable platform for enterprise clients with custom themes, dedicated domains and per-tenant configuration.",
-          stack: ["React", "FastAPI", "PostgreSQL", "Docker"],
+            "Development of the core architecture for the main outlet nmmexico.com and its strategic extensions: nmlive.com (social focus), theagallery.com (art division) and globaljetest.com (corporate division). The system shares a single database and backend (FastAPI + MySQL) while each extension keeps its own branding, visual theme and regional configuration.",
+          stack: ["React 19", "Vite", "FastAPI", "MySQL", "Docker", "Nginx"],
+          highlights: [
+            "Hub & Spoke architecture (core and extensions)",
+            "Content management segmented by region and publication type",
+            "Shared OAuth, Stripe (payments) and R2 (images) integrations",
+          ],
+          url: "https://nmmexico.com",
         },
         {
           title: "AIFA Toll Booth System",
