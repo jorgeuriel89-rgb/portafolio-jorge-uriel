@@ -164,8 +164,9 @@ export const content: Record<Lang, SiteContent> = {
           title: "LMS Educativo",
           subtitle: "Plataforma de aprendizaje",
           description:
-            "Sistema de gestión de aprendizaje con cursos, evaluaciones automatizadas, seguimiento de progreso y panel administrativo.",
+            "Desarrollo de la plataforma LMS, el sitio web corporativo y apoyo en diversos desarrollos para ControlTrips: cursos, evaluaciones automatizadas, seguimiento de progreso y panel administrativo.",
           stack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+          url: "https://controltripstms.com/",
         },
         {
           title: "Plataforma White-Label",
@@ -296,8 +297,9 @@ export const content: Record<Lang, SiteContent> = {
           title: "Educational LMS",
           subtitle: "Learning platform",
           description:
-            "Learning management system with courses, automated assessments, progress tracking and an admin dashboard.",
+            "Development of the LMS platform, the corporate website and support across several projects for ControlTrips: courses, automated assessments, progress tracking and an admin dashboard.",
           stack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+          url: "https://controltripstms.com/",
         },
         {
           title: "White-Label Platform",
