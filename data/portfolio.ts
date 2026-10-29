@@ -180,6 +180,7 @@ export const content: Record<Lang, SiteContent> = {
           description:
             "Sistema de información para operaciones del Aeropuerto Internacional Felipe Ángeles, desarrollado con SICE México.",
           stack: ["TypeScript", "Node.js", "SQL Server"],
+          url: "https://www.sice.com/blog/2021/11/17/suministro-instalacion-y-puesta-en-servicio-del-nivel-1-del-sistema-de-peaje-para-la-fase-2-y-3-del-circuito-exterior-mexiquense-estado-de-mexico/",
         },
       ],
     },
@@ -311,6 +312,7 @@ export const content: Record<Lang, SiteContent> = {
           description:
             "Information system for operations at Felipe Ángeles International Airport, built with SICE México.",
           stack: ["TypeScript", "Node.js", "SQL Server"],
+          url: "https://www.sice.com/blog/2021/11/17/suministro-instalacion-y-puesta-en-servicio-del-nivel-1-del-sistema-de-peaje-para-la-fase-2-y-3-del-circuito-exterior-mexiquense-estado-de-mexico/",
         },
       ],
     },
