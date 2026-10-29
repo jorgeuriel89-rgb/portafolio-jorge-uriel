@@ -20,6 +20,27 @@ export async function generateMetadata({
     alternates: {
       languages: { es: "/es", en: "/en" },
     },
+    openGraph: {
+      type: "website",
+      siteName: "Jorge Uriel Gorgonio",
+      title: t.title,
+      description: t.description,
+      url: `/${lang}`,
+      locale: lang === "es" ? "es_MX" : "en_US",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 627,
+          alt: "Jorge Uriel Gorgonio Cobaxin — Full Stack Developer",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.title,
+      description: t.description,
+    },
   };
 }
 
