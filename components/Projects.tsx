@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import type { Project, SiteContent } from "@/data/portfolio";
 
-const spans = ["lg:col-span-7", "lg:col-span-5", "lg:col-span-12"];
+const spans = ["lg:col-span-12", "lg:col-span-7", "lg:col-span-5"];
 
 function Card({
   project,
@@ -22,7 +22,7 @@ function Card({
         <span className="font-mono text-sm text-ink-faint">
           {String(index + 1).padStart(2, "0")}
         </span>
-        {project.url && (
+        {(project.url || project.links) && (
           <ArrowUpRight className="size-5 text-ink-faint transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-accent" />
         )}
       </div>
@@ -59,10 +59,32 @@ function Card({
             </li>
           ))}
         </ul>
-        {project.url && (
-          <p className="mt-6 font-mono text-xs uppercase tracking-widest text-ink-faint transition-colors group-hover:text-accent">
-            {viewLabel} →
-          </p>
+        {(project.url || project.links) && (
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-mono text-xs uppercase tracking-widest text-ink-faint transition-colors hover:text-accent"
+              >
+                {viewLabel}
+                <ArrowUpRight className="size-3.5" />
+              </a>
+            )}
+            {project.links?.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-mono text-xs tracking-wider text-ink-soft transition-colors hover:text-accent"
+              >
+                {link.label}
+                <ArrowUpRight className="size-3.5" />
+              </a>
+            ))}
+          </div>
         )}
       </div>
     </>
@@ -70,18 +92,7 @@ function Card({
 
   const classes = `group flex flex-col justify-between rounded-2xl border border-line p-8 transition-all duration-300 hover:-translate-y-1 hover:border-ink/30 hover:shadow-[0_20px_50px_-30px_rgba(15,23,42,0.3)] md:p-10 ${className ?? ""}`;
 
-  return project.url ? (
-    <a
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={classes}
-    >
-      {inner}
-    </a>
-  ) : (
-    <article className={classes}>{inner}</article>
-  );
+  return <article className={classes}>{inner}</article>;
 }
 
 export default function Projects({ t }: { t: SiteContent["projects"] }) {

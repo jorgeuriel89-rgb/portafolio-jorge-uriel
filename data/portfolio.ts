@@ -15,12 +15,18 @@ export interface ExperienceItem {
   description: string;
 }
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
+
 export interface Project {
   title: string;
   subtitle: string;
   description: string;
   stack: string[];
   highlights?: string[];
+  links?: ProjectLink[];
   url?: string;
 }
 
@@ -173,14 +179,19 @@ export const content: Record<Lang, SiteContent> = {
           title: "Ecosistema de Medios Multimarca",
           subtitle: "Expansión y arquitectura modular de un medio digital",
           description:
-            "Desarrollo de la arquitectura central (Core) para el medio principal nmmexico.com y sus extensiones estratégicas: nmlive.com (enfoque social), theagallery.com (división de arte) y globaljetest.com (división corporativa). El sistema comparte la misma base de datos y backend (FastAPI + MySQL), mientras cada extensión mantiene su propio branding, tema visual y configuración regional.",
+            "Arquitectura central (Core) de nmmexico.com y sus extensiones nmlive.app, theaggallery.com y agenterprisesltd.com: una sola base de datos y backend (FastAPI + MySQL), con branding y configuración propios por extensión.",
           stack: ["React 19", "Vite", "FastAPI", "MySQL", "Docker", "Nginx"],
           highlights: [
             "Arquitectura Hub & Spoke (núcleo y extensiones)",
             "Gestión de contenido segmentada por región y tipo de publicación",
             "Integración de OAuth, Stripe (pagos) y R2 (imágenes) compartidos",
           ],
-          url: "https://nmmexico.com",
+          links: [
+            { label: "nmmexico.com", url: "https://nmmexico.com" },
+            { label: "nmlive.app", url: "https://nmlive.app" },
+            { label: "theaggallery.com", url: "https://theaggallery.com" },
+            { label: "agenterprisesltd.com", url: "https://www.agenterprisesltd.com" },
+          ],
         },
         {
           title: "Sistema de Casetas AIFA",
@@ -312,14 +323,19 @@ export const content: Record<Lang, SiteContent> = {
           title: "Multi-Brand Media Ecosystem",
           subtitle: "Modular architecture for a digital media outlet",
           description:
-            "Development of the core architecture for the main outlet nmmexico.com and its strategic extensions: nmlive.com (social focus), theagallery.com (art division) and globaljetest.com (corporate division). The system shares a single database and backend (FastAPI + MySQL) while each extension keeps its own branding, visual theme and regional configuration.",
+            "Core architecture for nmmexico.com and its extensions nmlive.app, theaggallery.com and agenterprisesltd.com: a single database and backend (FastAPI + MySQL), with per-extension branding and regional configuration.",
           stack: ["React 19", "Vite", "FastAPI", "MySQL", "Docker", "Nginx"],
           highlights: [
             "Hub & Spoke architecture (core and extensions)",
             "Content management segmented by region and publication type",
             "Shared OAuth, Stripe (payments) and R2 (images) integrations",
           ],
-          url: "https://nmmexico.com",
+          links: [
+            { label: "nmmexico.com", url: "https://nmmexico.com" },
+            { label: "nmlive.app", url: "https://nmlive.app" },
+            { label: "theaggallery.com", url: "https://theaggallery.com" },
+            { label: "agenterprisesltd.com", url: "https://www.agenterprisesltd.com" },
+          ],
         },
         {
           title: "AIFA Toll Booth System",
